@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "nome": "teste1",
+        "unidadeMed": "Litro",
+        "quantidade": 2,
+        "preco": "2,99",
+        "prodPerecivel": true,
+        "dataValidade": "10/06/2018",
+        "dataFab": "04/08/2018"
+    }, 
+    {
+        "id": 2,
+        "nome": "teste2",
+        "unidadeMed": "Litro",
+        "quantidade": 2,
+        "preco": "2,99",
+        "prodPerecivel": true,
+        "dataValidade": "10/06/2018",
+        "dataFab": "04/08/2018"
+    }
+]

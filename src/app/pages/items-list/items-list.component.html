@@ -1,3 +1,41 @@
-<p>
-  items-list works!
-</p>
+<p-dataView [value]="items" [sortField]="sortField" [sortOrder]="sortOrder">
+  <p-header>
+      <div class="ui-helper-clearfix">
+          <div class="ui-g">
+              <div class="ui-g-12 ui-md-4">
+                  <div class="ui-inputgroup">
+                      <input type="search" pInputText placeholder="Buscar" (keyup)="dv.filter($event.target.value)">         
+                      <button pButton type="button" icon="pi pi-search" class="ui-button-warn"></button>    
+                    </div>
+              </div>
+          </div>
+          <div class="ui-g">
+              <div class="ui-g-3 ui-sm-6">Nome</div>
+              <div class="ui-g-1 ui-sm-6">Preço</div>
+              <div class="ui-g-2 ui-sm-6">Quantidade</div>
+              <div class="ui-g-1 ui-sm-6">Perecível</div>
+              <div class="ui-g-2 ui-sm-6">Data de Validade</div>
+              <div class="ui-g-2 ui-sm-6">Data de Fabricação</div>
+              <div class="ui-g-1 ui-sm-6"></div>
+          </div>
+      </div>
+  </p-header>
+  <ng-template let-item pTemplate="listItem">
+      <div class="ui-g">
+          <div class="ui-g-12">
+              <div class="ui-g">
+                <div class="ui-g-3 ui-sm-6">{{item.nome}}</div>
+                <div class="ui-g-1 ui-sm-6">{{item.preco}}</div>
+                <div class="ui-g-2 ui-sm-6">{{item.quantidade}}</div>
+                <div class="ui-g-1 ui-sm-6"><p-checkbox disabled [(ngModel)]='item.prodPerecivel' binary="true"></p-checkbox></div>
+                <div class="ui-g-2 ui-sm-6">{{item.dataValidade}}</div>
+                <div class="ui-g-2 ui-sm-6">{{item.dataFabricacao}}</div>
+                <div class="ui-g-1 ui-sm-6">
+                  <button pButton type="button" icon="pi pi-pencil" (click)="selectCar($event, item)"></button>
+                  <button pButton type="button" icon="pi pi-trash" (click)="selectCar($event, item)"></button>
+                </div>
+              </div>
+          </div>
+      </div>
+  </ng-template>
+</p-dataView>
