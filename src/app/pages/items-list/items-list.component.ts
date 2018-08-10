@@ -10,6 +10,14 @@ import { ItemService } from '../../components/items/item.service';
 export class ItemsListComponent implements OnInit {
   errorMessage: string;
   items: IItems[] = [];
+  headerItems: object = 
+      [{"label": "Nome", "class": "ui-g-3"},
+      {"label": "Preço", "class": "ui-g-1"},
+      {"label": "Quantidade", "class": "ui-g-2"},
+      {"label": "Perecível", "class": "ui-g-1"},
+      {"label": "Data de Validade", "class": "ui-g-2"},
+      {"label": "Data de Fabricação", "class": "ui-g-2"},
+      {"label": "", "class": "ui-g-1"}];
 
   constructor(private itemService: ItemService) { }
 

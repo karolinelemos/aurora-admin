@@ -10,13 +10,14 @@ import { HeaderComponent } from './components/header/header.component';
 import { ItemsListComponent } from './pages/items-list/items-list.component';
 import { AddItemComponent } from './pages/add-item/add-item.component';
 import { MenuComponent } from './components/menu/menu.component';
-
+import { ItemsComponent } from './components/items/items.component';
 
 import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
 import {MenuModule} from 'primeng/menu';
 import {DataViewModule} from 'primeng/dataview';
 import {CheckboxModule} from 'primeng/checkbox';
+
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import {CheckboxModule} from 'primeng/checkbox';
     ItemsListComponent,
     MenuComponent,
     AddItemComponent,
+    ItemsComponent,
   ],
   imports: [
     BrowserModule, 

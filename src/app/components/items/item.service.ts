@@ -8,7 +8,7 @@ import { tap, catchError, map } from 'rxjs/operators';
     providedIn: 'root'
 })
 export class ItemService {
-    private itemsUrl = 'api/items.json';
+    private itemsUrl = 'api//items/items.json';
 
     constructor(private http: HttpClient) {}
 

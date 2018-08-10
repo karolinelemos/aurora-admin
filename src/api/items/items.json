@@ -7,7 +7,7 @@
         "preco": "2,99",
         "prodPerecivel": true,
         "dataValidade": "10/06/2018",
-        "dataFab": "04/08/2018"
+        "dataFabricacao": "04/01/2018"
     }, 
     {
         "id": 2,
@@ -17,6 +17,6 @@
         "preco": "2,99",
         "prodPerecivel": true,
         "dataValidade": "10/06/2018",
-        "dataFab": "04/08/2018"
+        "dataFabricacao": "04/01/2018"
     }
 ]
