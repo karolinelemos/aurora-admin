@@ -1,8 +1,8 @@
 [
     {
-        "id": 1,
+        "itemId": 1,
         "nome": "teste1",
-        "unidadeMed": "Litro",
+        "unidadeMed": 3,
         "quantidade": 2,
         "preco": "2,99",
         "prodPerecivel": true,
@@ -10,9 +10,9 @@
         "dataFabricacao": "04/01/2018"
     }, 
     {
-        "id": 2,
+        "itemId": 2,
         "nome": "teste2",
-        "unidadeMed": "Litro",
+        "unidadeMed": 2,
         "quantidade": 2,
         "preco": "2,99",
         "prodPerecivel": true,

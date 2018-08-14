@@ -12,11 +12,17 @@ import { AddItemComponent } from './pages/add-item/add-item.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { ItemsComponent } from './components/items/items.component';
 
+
 import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
 import {MenuModule} from 'primeng/menu';
 import {DataViewModule} from 'primeng/dataview';
 import {CheckboxModule} from 'primeng/checkbox';
+import {InputTextModule} from 'primeng/inputtext';
+import {FieldsetModule} from 'primeng/fieldset';
+import {DropdownModule} from 'primeng/dropdown';
+import {CalendarModule} from 'primeng/calendar';
+
 
 
 
@@ -39,9 +45,14 @@ import {CheckboxModule} from 'primeng/checkbox';
     MenuModule,
     DataViewModule,
     CheckboxModule,
+    InputTextModule,
+    FieldsetModule,
+    DropdownModule,
+    CalendarModule,
     RouterModule.forRoot([
       {path: '', component: ItemsListComponent},
-      {path: 'add-item', component: AddItemComponent}
+      {path: 'add-item', component: AddItemComponent},
+      {path: 'add-item/:id', component: AddItemComponent}
     ])
   ],
   providers: [],

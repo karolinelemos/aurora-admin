@@ -25,7 +25,7 @@
                 <div class="ui-g-2 ui-sm-6">{{item.dataValidade}}</div>
                 <div class="ui-g-2 ui-sm-6">{{item.dataFabricacao}}</div>
                 <div class="ui-g-1 ui-sm-6 table-actions">
-                  <button pButton type="button" icon="pi pi-pencil" (click)="selectCar($event, item)"></button>
+                  <button pButton type="button" icon="pi pi-pencil" [routerLink]="['/add-item/', item.itemId]"></button>
                   <button pButton type="button" icon="pi pi-trash" (click)="selectCar($event, item)"></button>
                 </div>
               </div>

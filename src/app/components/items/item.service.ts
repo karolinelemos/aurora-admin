@@ -14,9 +14,13 @@ export class ItemService {
 
     getItems(): Observable<IItems[]> {
         return this.http.get<IItems[]>(this.itemsUrl).pipe(
-            tap(data => console.log('All: ' + JSON.stringify(data))),
+            tap(),
             catchError(this.handleError)
         );
+    }
+
+    getItembyId(id: number): Observable<IItems> {
+        return this.getItems().pipe(map(items => items.find(item => item.itemId == id)));
     }
 
     private handleError(err: HttpErrorResponse) {
